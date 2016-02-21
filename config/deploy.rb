@@ -1,4 +1,6 @@
 # config valid only for current version of Capistrano
+# require 'capistrano/bundler'
+
 lock '3.4.0'
 
 set :application, 'landing-page'
