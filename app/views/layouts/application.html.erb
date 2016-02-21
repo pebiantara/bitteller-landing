@@ -15,42 +15,32 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-</head>
-<body>
-  <%= render "shared/header" %>
-  <%= yield %>
-
-<footer>
-  <ul class="list-unstyled">
-   <li>
-    <a href="javascript:void(0)" id="about-us">About us</a>
-  </li>
-  <li>
-    <a href="#">FAQ </a>
-  </li>
-  <li>
-    <a href="https://instabuyback.com/page/privacy" target="_blank" >Terms and Conditions</a>
-  </li>
-  <li>
-    <a href="https://instabuyback.com/page/privacy" target="_blank" >Privacy</a>
-  </li>
-  <li>
-    <a href="mailto:customerservice@instabuyback.com">Contact Us</a>
-  </li>
-</ul>
-<div class="clearfix"></div>
-<p class="copyright">
- ©2016 InstaBuyBack. All rights reserved.
-</p>
-</footer>
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
-<script>
-  $(document).ready(function(){
-    $('#about-us').click(function(){
-      $("html, body").animate({ scrollTop: $('.section-three').offset().top }, 1000);
-    });
-  });
-</script>
-<%= yield :javascripts %>
-</body>
-</html>
+    </head>
+    <body>
+      <section class="top-header">
+        <%= render "shared/header" %>
+        <div class="content-header">        
+          <div class="mobile-mg col-md-3 col-lg-3 col-sm-3 col-xs-3 col-md-offset-2 col-lg-offset-2 col-sm-offset-1 hidden-xs">
+            <%= image_tag("mobile.png", class: 'img-responsive') %>
+          </div>
+          <div class="col-md-6 col-lg-6 text-header-content text-center">
+            <h1>Buy Bit Coin Instantly</h1>
+            <h2>From your local store</h2>
+            <form>
+              <div class="col-md-8 col-md-offset-2">
+                <div class="custom-group">
+                  <input class="email-input form-control input-lg" placeholder="Enter Zipcode or City" type="text" name="subscription[email]" id="subscription_email">
+                  <button name="button" type="submit" class="btn-lg btn-subscribe" data-disable-with="submit..."><i class="fa fa-chevron-right"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="footer-of-header hidden-xs"></div>
+      </section>
+      <%= yield %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+      <%= yield :javascripts %>
+    </body>
+    </html>

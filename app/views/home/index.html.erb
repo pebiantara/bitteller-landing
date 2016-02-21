@@ -1,123 +1,62 @@
-<section class="section-one">
-  <div class="container">
-   <h1>Improve the profit of your drop shipping business</h1> 
-   <h2 class="green">with discounted Amazon Gift Cards</h2>
-   <div class="form-subscribe col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2   col-xs-10 col-xs-offset-1">
-    <div class="text-info">
-     Start now and get a free $10 Amazon
-     <br/>
-     Gift card code in your account:
-   </div>
-   <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
-   <div class="">
-    <%= f.text_field :email, class: 'email-input', placeholder: 'E-mail address' %>
-    <%= f.button "sign up", class: 'btn-subscribe', data: {disable_with: 'submit...'} %>
-  </div>
-  <% end %>
-</div>
-<div class="pipe-top hidden-xs"></div>
-<div class="pipe-top-vertical hidden-lg hidden-md hidden-sm"></div>
-</div>
-</section>
-<div class="clearfix"></div>
-<section class="section-two gray-background">
-  <div class="container">
-   <div class="title-1">
-    <span>How it works</span>
-  </div>
-  <p class="desc">
-    LionGiftCard is a system to provide you discounted Amazon gift cards and automatically managing the gift code balance on your Amazon account(s). We will automatically add codes to your account right after your payment is received.
-  </p>
-  <div class="col-sm-4 col-md-4 text-center how-it-works">
-    <img src="assetspercent.png" class=""></img>
-    <h4 class="green">High discounts for bulk purchases</h4>
-    <p class="desc-detail">Get up to 20% discount in your bulk gift codes purchases.</p>
-  </div>
-  <div class="col-sm-4 col-md-4 text-center how-it-works">
-    <img src="assetsloading.png" class=""></img>
-    <h4 class="green">Automatically redemption</h4>
-    <p class="desc-detail">Connect your Amazon account and start to redeem codes.</p>
-  </div>
-  <div class="col-sm-4 col-md-4 text-center how-it-works">
-    <img src="assetspilot.png" class=""></img>
-    <h4 class="green">Autopilot gift codes management</h4>
-    <p class="desc-detail">Choose a daily budget and our Lion will feeds your account with gift card codes.</p>
-  </div>
-  <div class="col-sm-4 col-md-4 text-center how-it-works">
-    <img src="assetsheadset.png" class=""></img>
-    <h4 class="green">Live customer suport</h4>
-    <p class="desc-detail">Have a question, problem, or request? Reach us anytime by phone, email or chat.</p>
-  </div>
-  <div class="col-sm-4 col-md-4 text-center how-it-works">
-    <img src="assetsdocument.png" class=""></img>
-    <h4 class="green">Tracking in real time</h4>
-    <p class="desc-detail">You can get online reports to monitorize the redemption activity.</p>
-  </div>
-  <div class="col-sm-4 col-md-4 text-center how-it-works">
-    <img src="assetsalarm.png" class=""></img>
-    <h4 class="green">Set alerts</h4>
-    <p class="desc-detail">You will never be out of codes, you can set up triggers to activate new redemptions once your balance fell below of the amount desired.</p>
-  </div>
-</div>
-</section>
-<section class="section-three">
-  <div class="container">
-   <div class="pipe-bottom hidden-xs"></div>
-   <div class="pipe-bottom-vertical hidden-lg hidden-md hidden-sm"></div>
-   <div class="title-1">
-    About Us
-  </div>
-  <div class="about-us-detail">
-    <div class="logo-instabuyback col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2 col-xs-9 col-xs-offset-3">
-      <img src="assetsinstabuyback.png" class="img-responsive"></img>
+<div class="container">
+  <h3 class="text-center">The Easiest & Safe Way in U.S to Buy Bitcoin With Cash</h3>
+  <h3 class="text-center green"><strong>How It Works</strong></h3>
+  <div class="howitworks">
+    <div class="col-md-3 col-lg-3 col-sm-3 text-center col-md-offset-1 col-lg-offset-1 col-sm-offset-1">
+      <%= image_tag("bitbillers.png", class: 'img-responsive') %>
+      <br/>
+      <div class="title green">1. CREATE A BITBILL</div>
+      Choose a local store and confirm the amount to play. You will get an electronic BitBill Delivered by
+      email or sms.
     </div>
-    <div class="about-us-text col-md-6 col-sm-7 col-xs-9 col-xs-offset-3 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
-     While your business is running automatically, our LionGiftCard Team is purchasing unwanted gift cards from business and customers in order to provide you the best discounts. LionGiftCard is brought to you by INSTABUYBACK LLC, a trade-in company located in Miami, Florida.
-   </div>
- </div>
- <div class="cars">
-
- </div>
-</div>
-</section>
-<section class="section-four gray-background">
-  <div class="arrow-up"></div>
-  <div class="container">
-   <div class="title-1">
-    Our Markets
+    <div class="chevron hidden-xs hidden-sm">
+      <i class="fa fa-chevron-right"></i>
+    </div>
+    <div class="col-md-3 col-lg-3 col-sm-3 text-center ">
+      <%= image_tag("market.png", class: 'img-responsive') %>
+      <br/>
+      <div class="title green">2. PAY YOUR BITBILL</div>
+      Go to the local store, provide your BitBill number to cashier and complete the cash
+      payment.
+    </div>
+    <div class="chevron hidden-xs hidden-sm">
+      <i class="fa fa-chevron-right"></i>
+    </div>
+    <div class="col-md-3 col-lg-3 col-sm-3   text-center">
+      <%= image_tag("coints.png", class: 'img-responsive') %>
+      <br/>
+      <div class="title green">3. GET BITCOIN</div>
+      Instantly released to your address or biller account.
+    </div>
   </div>
-  <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3 our-markets text-center">
-    <div class="box-img liberty">
-    </div>
-    <h4 class="green">USA</h4>
-    <p class="desc-detail">Bussines and sellers only 
-    </div>
-    <div class="col-sm-4 col-md-3 our-markets text-center">
-      <div class="box-img greenwich">
-      </div>
-      <h4 class="green">UK</h4>
-      <p class="desc-detail">Coming soon
-      </div>
-      <div class="clearfix"></div>
-      <div class="cs col-md-12 desc">
-        Customer Service: <br/>
-        Call 888-616-3938 <br/>
-        Mon-Fri // 9AM-5PM EST
+  <div class="col-md-12 text-center started">
+    <h3 class="green"><strong>Buy Bitcoin Today</strong></h3>
+    <%= link_to "GET STARTED", "#", class: "btn btn-primary btn-lg radius" %>
+    <br/>
+    <strong>Customer Support:</strong>
+    <br/>
+    Text to 888-616-3938
+    <br/>
+    Email to <%= link_to 'support@bitbillers.com', mailto: 'support@bitbillers.com' %>
+    <br/>
+    Mon-Fri // 9AM-5PM EST
+  </div>
+</div>
+<section class="biller-sec">
+  <div class="container">
+    <h3 class="green text-center billers"><strong>Billers</strong><h3>  
+      <div class="col-md-8 col-lg-8 col-sm-8 text-right">
+        <p>Get 3% increase in your business margins.
+          <br/>
+          <br/>
+          If you accept bitcoin for your web shop ou your services online, BitBillers will boost your sales.
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-4 text-right">
+          <%= link_to "Pay Whith Bitcoin", "#", class: 'btn btn-gray' %>
+          <br/>
+          Power by <div class="col-md-3"><%= image_tag("logo-text.png", class: "img-responsive") %></div>
+        </div>
       </div>
     </div>
-  </section>
-  <section class="section-five">
-    <div class="container">
-     <div class="ready col-lg-4 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 col-lg-offset-2">
-      Ready to get discounts?
-    </div>
-    <div class="form-subscribe col-lg-4 col-md-6 col-lg-offset-0 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-   <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
-   <div class="">
-    <%= f.text_field :email, class: 'email-input', placeholder: 'E-mail address' %>
-    <%= f.button "sign up", class: 'btn-subscribe', data: {disable_with: 'submit...'} %>
   </div>
-  <% end %>
-  </div>
-</div>
 </section>
