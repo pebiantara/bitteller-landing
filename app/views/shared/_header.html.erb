@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-default gray-background header">
+  <nav class="navbar navbar-default gray-background header">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -9,9 +9,9 @@
           <span class="icon-bar"></span>
         </button>
         <%= link_to root_path do %>
-          <div class="logo col-md-5 col-lg-5 col-xs-5 col-sm-5">
-            <%= image_tag("logo-text.png", class: "logo") %>
-          </div>
+        <div class="logo col-md-5 col-lg-5 col-xs-5 col-sm-5">
+          <%= image_tag("logo-text.png", class: "logo") %>
+        </div>
         <% end %>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
@@ -31,34 +31,35 @@
           <li class="dropdown sign-in">
             <button data-toggle="dropdown" type="submit" class="btn btn-primary" onclick="$('.forgot-password').removeClass('open');"><b>Login</b></button>
             <div class="dropdown-menu">
-              <%= form_tag "#", remote: true, authenticity_token: true do %>
+              <form role="form" method="post" action="https://instabuyback.com/auth/login">
                 <div class="form-group">
-                  <input type="email" placeholder="Enter email" id="email-address-login" class="form-control" name="email">
-                  <input type="password" placeholder="Password" id="password-login" class="form-control" name="password">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" placeholder="Enter email" id="email-address-login" class="form-control" name="email" required="">
                 </div>
-                <%= button_tag type: 'submit', class: "btn btn-primary width-full", data: { disable_with: '<i class="fa fa-spin fa-spinner"></i> Signing in...'} do %>
-                  Sign In
-                <% end %>
-              <% end %>
-              <div class="col-lg-6 no-padding col-xs-6">
-                <!-- <#%= link_to "Forgot Password?", "javascript:void(0)", onclick: "$('.forgot-password').addClass('open');" %> -->
-              </div>
-              <div class="col-lg-6 no-padding col-xs-6 text-right">
-                <%= link_to "Create account", "#" %>
-              </div>            
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" placeholder="Password" id="password-login" class="form-control" name="password" required="">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="1" name="keep_login"> Keep me logged in
+                  </label>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
             </div>
           </li>
           <li class="dropdown forgot-password">
             <div class="dropdown-menu dropdown-password">
               <%= form_tag forgot_password_path, remote: true, authenticity_token: true do %>
-                <div class="form-group">
-                  <input type="email" placeholder="Enter email" id="email-address-login" class="form-control" name="email">
-                </div>
-                <%= button_tag type: 'submit', class: "btn btn-primary width-full", data: { disable_with: '<i class="fa fa-spin fa-spinner"></i> processing...'} do %>
-                  Reset Password
-                <% end %>
+              <div class="form-group">
+                <input type="email" placeholder="Enter email" id="email-address-login" class="form-control" name="email">
+              </div>
+              <%= button_tag type: 'submit', class: "btn btn-primary width-full", data: { disable_with: '<i class="fa fa-spin fa-spinner"></i> processing...'} do %>
+              Reset Password
+              <% end %>
 
-                <%= link_to "Cancel", "#", class: 'btn btn-default width-full', onclick: "$('.sign-in').addClass('open');$('.forgot-password').removeClass('open');" %>
+              <%= link_to "Cancel", "#", class: 'btn btn-default width-full', onclick: "$('.sign-in').addClass('open');$('.forgot-password').removeClass('open');" %>
               <% end %>
             </div>
           </li>
