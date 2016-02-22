@@ -1,0 +1,22 @@
+@media (max-width: 766px) and (min-width: 400px){
+  .sign-in{margin-left: 5px;}
+}
+@media (min-width: 320px) and (max-width: 990px){
+  .content-header{margin-top: -150px; padding-bottom: 50px;}
+  .email-input{width: 60%;}
+  .top-header{padding-bottom: 50px;}
+}
+
+@media(max-width: 767px){
+  .btn-subscribe{width: 100px !important;}
+  /*.btn-subscribe{margin-left: 10px !important;}*/
+}
+
+@media(min-width: 992px){
+  .text-header-content{margin-top: 100px !important;}
+  .custom-group input{width: 90% !important;}
+}
+
+@media(min-width: 992px) and (max-width: 1260){
+  .text-header-content{margin-top: 200px !important;}
+}

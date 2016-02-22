@@ -5,6 +5,7 @@ body{
   overflow-x: hidden;
 }
 
+
 header{margin-top: 10px;}
 .green{color: #96be12}
 .btn-primary{background: #96be12 !important; border: 1px solid #96be12;}
@@ -16,7 +17,7 @@ header{margin-top: 10px;}
   border: none;
 }
 
-section.top-header{float: left; background: url(bg.png) repeat; opacity: 0.8; width: 100%;}
+section.top-header{float: left; opacity: 0.8; width: 100%;}
 .mobile-mg{margin-top: 70px; z-index: 10;}
 h1{color: #96be12; font-weight: bolder; font-size: 60px;}
 h2{font-size: 50px;}
@@ -88,4 +89,5 @@ footer ul li { position: relative; float: left; display: block; right: 50%; marg
 footer p{text-align: center; margin-top: 10px;}
 footer ul li a{color: #fff !important;}
 span.input-group-btn{cursor: pointer;}
-
+.form-control:focus{color:#96be12; background: #fff;}
+.sign-in{margin-left: 10px;}
