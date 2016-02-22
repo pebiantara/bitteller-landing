@@ -43,8 +43,9 @@ section.top-header{float: left;
   height: 100%; 
   float: left;
 }
-.mobile-mg{margin-top: 20px; z-index: 10; width: 300px; height: 530px;}
+.mobile-mg{margin-top: 20px; z-index: 10; width: 300px; height: 480px;}
 
+.text-safe{margin-top: 10px;}
 h1{color: #96be12; font-weight: 400; font-size: 60px;}
 h2{
   font-size: 32px;
@@ -56,7 +57,7 @@ div.dropdown-menu{min-width: 300px; padding: 20px;}
 .text-header-content{margin-top: 100px;}
 .text-header-content h2{margin-top: 5px;}
 .text-header-content h1{margin-top: 2px;}
-.footer-of-header{background: #c5c5c4; opacity: 0.3; width: 100%; height: 100px; margin-top: -60px;}
+.footer-of-header{background: #c5c5c4; opacity: 0.3; width: 100%; height: 100px; margin-top: -90px;}
 /*.form-group .form-control*/
 .input{background: #c5c5c4;}
 
@@ -82,14 +83,14 @@ span.input-group-btn{z-index: -1}
 }
 .contact-us-btn{font-size: 24px; font-weight: 500;}
 .howitworks {margin-top: 50px;}
-.howitworks img{width: 200px; height: 250px; margin: auto;}
+.howitworks img{width: 150px; height: 200px; margin: auto;}
 .chevron{width: 50px; float: left; font-size: 50px; color: #96be12; margin-top: 100px; margin-left: 20px;}
 .started{margin-bottom: 50px;}
 .biller-sec{background: #ebebeb;}
 .billers{margin-bottom: 50px; margin-top: 50px;}
 .btn-gray{padding: 20px;}
 .title{font-weight: bolder; font-size: 25px;}
-.how-it-works-content{margin-top: 10px;}
+.how-it-works-content{margin-top: 0px;}
 .increase{font-size: 25px;}
 .btn-pay img{width: 75%;}
 .box-checklist{margin-top: 25px;}
