@@ -1,13 +1,13 @@
 body{
   font-family: Dosis, Arial, sans-serif;  
   color: #717175;
-  font-size: 22px;
+  font-size: 27px;
   overflow-x: hidden;
 }
 
 header{margin-top: 10px;}
 .green{color: #96be12}
-.btn-primary{background: #96be12; border: 1px solid #96be12;}
+.btn-primary{background: #96be12 !important; border: 1px solid #96be12;}
 .btn-primary:hover, .btn-primary:visited, .btn-primary:focus, .btn-primary:active, .btn-primary.disabled{background: #727276;}
 .sign-in{padding-top: 5px;}
 
@@ -21,6 +21,7 @@ section.top-header{float: left; background: url(bg.png) repeat; opacity: 0.8; wi
 h1{color: #96be12; font-weight: bolder; font-size: 60px;}
 h2{font-size: 50px;}
 h3{font-size: 40px;}
+h4{font-size: 30px;}
 div.dropdown-menu{min-width: 300px; padding: 20px;}
 .text-header-content{margin-top: 200px;}
 .text-header-content h2{margin-top: 5px;}
@@ -48,8 +49,42 @@ div.dropdown-menu{min-width: 300px; padding: 20px;}
   border-radius: 0px 20px 20px 0px;
 }
 .howitworks {margin-top: 50px;}
+.howitworks img{width: 200px; height: 250px; margin: auto;}
 .chevron{width: 50px; float: left; font-size: 50px; color: #96be12; margin-top: 100px; margin-left: 20px;}
 .started{margin-bottom: 50px;}
-.biller-sec{background: #f0f0f0;}
-.billers{margin-bottom: 100px;}
+.biller-sec{background: #ebebeb;}
+.billers{margin-bottom: 50px; margin-top: 50px;}
 .btn-gray{padding: 20px;}
+.title{font-weight: bolder; font-size: 25px;}
+.how-it-works-content{margin-top: 10px;}
+.increase{font-size: 25px;}
+.btn-pay img{width: 75%;}
+.customers-text{margin-top: 100px;}
+.box-checklist{margin-top: 50px;}
+.contact-us-btn{margin-top: 50px; margin-bottom: 75px !important;}
+.stores h3:first{margin-top: 50px; margin-bottom: 50px !important;}
+.join{font-size: 30px;}
+.img-logo-text{width: 150px; margin-top: -10px; margin-right: 10px}
+.bit-buyyers {margin-top: 50px;}
+.bit-buyyers img:last{with: 400px;}
+.img-market{height: 300px;}
+.market{margin-top: 50px;}
+.market-text{padding-top:100px;}
+.market i{margin-left: 5px;}
+.btn-width{width: 200px; font-size: 25px;}
+section.questions{border-top: 5px solid #96be12;}
+.questions h3 {font-weight: bold; margin-top: 50px; font-size: 50px;}
+.title-accordion{width: 100%; background: #96be12; color: white; padding-left: 10px; margin-top: 20px; cursor: pointer;}
+.detail-accordion{background: #717175; color: white; padding: 10px; display: none;}
+.questions{margin-bottom: 50px;}
+.no-padding{padding: 0px !important;}
+footer{margin-top: 50px !important; padding: 20px 0px 20px 0px;}
+footer{background: #595658; min-height: 100px; padding-top: 20px;}
+footer { width: 100%; overflow: hidden; }
+footer ul { list-style: none; position: relative; float: left; display: block; left: 50%; }
+footer ul li { position: relative; float: left; display: block; right: 50%; margin-left:30px;}
+.copyright{color: #fff;}
+footer p{text-align: center; margin-top: 10px;}
+footer ul li a{color: #fff !important;}
+
+

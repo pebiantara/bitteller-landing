@@ -2,8 +2,8 @@
   <h3 class="text-center">The Easiest & Safe Way in U.S to Buy Bitcoin With Cash</h3>
   <h3 class="text-center green"><strong>How It Works</strong></h3>
   <div class="howitworks">
-    <div class="col-md-3 col-lg-3 col-sm-3 text-center col-md-offset-1 col-lg-offset-1 col-sm-offset-1">
-      <%= image_tag("bitbillers.png", class: 'img-responsive') %>
+    <div class="col-md-3 col-lg-3 col-sm-12 text-center col-md-offset-1 col-lg-offset-1 col-sm-offset-0 how-it-works-content">
+      <%= image_tag("bitbillers.png", class: 'img-responsive', height: 200) %>
       <br/>
       <div class="title green">1. CREATE A BITBILL</div>
       Choose a local store and confirm the amount to play. You will get an electronic BitBill Delivered by
@@ -12,8 +12,8 @@
     <div class="chevron hidden-xs hidden-sm">
       <i class="fa fa-chevron-right"></i>
     </div>
-    <div class="col-md-3 col-lg-3 col-sm-3 text-center ">
-      <%= image_tag("market.png", class: 'img-responsive') %>
+    <div class="col-md-3 col-lg-3 col-sm-12 text-center how-it-works-content">
+      <%= image_tag("market.png", class: 'img-responsive', height: 200) %>
       <br/>
       <div class="title green">2. PAY YOUR BITBILL</div>
       Go to the local store, provide your BitBill number to cashier and complete the cash
@@ -22,16 +22,17 @@
     <div class="chevron hidden-xs hidden-sm">
       <i class="fa fa-chevron-right"></i>
     </div>
-    <div class="col-md-3 col-lg-3 col-sm-3   text-center">
-      <%= image_tag("coints.png", class: 'img-responsive') %>
+    <div class="col-md-3 col-lg-3 col-sm-12   text-center how-it-works-content">
+      <%= image_tag("coints.png", class: 'img-responsive', height: 200) %>
       <br/>
       <div class="title green">3. GET BITCOIN</div>
       Instantly released to your address or biller account.
     </div>
   </div>
+  <div class="clearfix"></div>
   <div class="col-md-12 text-center started">
     <h3 class="green"><strong>Buy Bitcoin Today</strong></h3>
-    <%= link_to "GET STARTED", "#", class: "btn btn-primary btn-lg radius" %>
+    <%= link_to "GET STARTED", "#", class: "btn btn-primary btn-lg radius btn-width" %>
     <br/>
     <strong>Customer Support:</strong>
     <br/>
@@ -44,19 +45,102 @@
 </div>
 <section class="biller-sec">
   <div class="container">
-    <h3 class="green text-center billers"><strong>Billers</strong><h3>  
-      <div class="col-md-8 col-lg-8 col-sm-8 text-right">
-        <p>Get 3% increase in your business margins.
-          <br/>
-          <br/>
-          If you accept bitcoin for your web shop ou your services online, BitBillers will boost your sales.
-        </div>
-        <div class="col-md-4 col-lg-4 col-sm-4 text-right">
-          <%= link_to "Pay Whith Bitcoin", "#", class: 'btn btn-gray' %>
-          <br/>
-          Power by <div class="col-md-3"><%= image_tag("logo-text.png", class: "img-responsive") %></div>
-        </div>
+    <h1 class="green text-center billers"><strong>Billers</strong></h1>  
+    <div class="col-md-7 col-lg-7 col-sm-7 text-right col-md-offset-1 col-lg-offset-1 col-sm-offset-1">
+      <p class="increase"><strong>Get 3% increase in your business margins.</strong></p>
+      If you accept bitcoin for your web shop ou your services online, BitBillers will boost your sales.
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-4 text-left">
+      <%= link_to  "#", class: 'btn-pay' do %>
+      <%= image_tag("btn-pay.png", class: '') %>
+      <% end %>
+    </div>
+    <div class="market col-md-10 col-md-offset-1">
+      <%= image_tag("group.png", class: "img-responsive") %>
+    </div>
+    <div class="clearfix"></div>
+    <div class="customers-text text-center col-md-8 col-lg-8 col-sm-8 col-md-offset-2 col-lg-offset-2 col-sm-offset-2""">
+      <h4>
+        <strong>
+          Your customers can get Bitcoin easy and <br/>
+          fast using our convenient network of retail stores.
+        </strong> 
+      </h4>
+      <div class="col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
+        <ol class="list-unstyled text-left">
+          <li>1. Use our API or dashboard to create and deliver BitBills</li>
+          <li>2. Your customer can pay BitBills in CASH at Walk-in locations</li>
+          <li>3. We deliver bitcoin to your business address</li>
+        </ol>
       </div>
     </div>
+    <div class="col-md-12 box-checklist">
+      <div class="col-md-5 checklist col-md-offset-2">
+        <p><i class="fa fa-check-circle green"></i> Realtime notifications</p>
+        <p><i class="fa fa-check-circle green"></i>Locations in every major metropolitan area<p>
+        </div>
+        <div class="col-md-5   checklist">
+          <p><i class="fa fa-check-circle green"></i> Chargebacks risk-free</p>
+          <p><i class="fa fa-check-circle green"></i> Incredible customer support</p>
+        </div>
+      </div>
+      <div class="col-md-12 text-center contact-us-btn">
+        <%= link_to "Contact Us", "mailto:customerservice@instabuyback.com", class: 'btn btn-primary radius btn-lg btn-width' %>
+      </div>    
+    </div>
+  </section>
+  <section class="stores">
+    <h3 class="green text-center"><strong>Stores</strong></h3>
+    <h4 class="text-center"><strong>Do you own a retail business?</strong></h4>
+    <p class="join text-center">Join to the fast-growing evolution of Bitcoin.</p>
+    <div class="bit-buyyers">
+      <div class="col-md-5 col-lg-5 col-sm-5 text-right col-md-offset-1 col-lg-offset-1">
+        <%= image_tag("logo-text.png", class: 'img-logo-text') %>is building the larges nationwide network of local stores for buying Bitcoin. We’re inviting your business to join in on our succes. We offer the most convenient solution for Bitcoin buyers - Join us.
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <%= image_tag("home.png", class: "img-responsive img-home") %>
+      </div>
+    </div>
+  </section>
+  <div class="clearfix"></div>
+  <section class="market">
+    <div class="col-md-6 col-lg-6 col-md-offset-1 col-lg-offset-1 text-right">
+      <span class="green benefit-span"><strong>Benefits:</strong></span>
+      <br></br>
+      <ul class="list-unstyled">
+        <li>Free Point of Sale for the store<i class="fa fa-check-circle green"></i></li>
+        <li>Commissions per each sale<i class="fa fa-check-circle green"></i></li>
+        <li>Attract potential customers walking in your door<i class="fa fa-check-circle green"></i></li>
+      </ul>
+    </div>
+    <div class="col-md-2 col-lg-2">
+      <%= image_tag("hands.png", class: "img-responsive img-benefits") %>      
+    </div>
+    <div class="clearfix"></div>
+    <div class="contact-us text-center contact-us-btn">
+      <%= link_to "Contact Us", "#", class: 'btn btn-primary btn-lg radius btn-width' %>
+    </div>
+  </section>
+  <section class="questions">
+   <div class="col-md-11 col-md-offset-1">
+     <h3 class="green">Frequently Asked Questions</h3>
+     <br/>
+     <span><strong>Buying Bitcoin</strong></span>
+     <br/>
+     <div class="col-md-11 no-padding">
+       <div class="title-accordion" data-target="first-accordion">
+         What is Bitcoin?
+       </div>
+       <div class="detail-accordion" id="first-accordion" data-target="first-accordion">
+        Bitcoin is a new kind of digital money that can be sent from one person, to another without the need for a trusted third party such as a bank or other financial institution; it is the first global, decentralized virtual currency.
+      </div>
+      <div class="title-accordion" data-target="second-accordion" data-target="second-accordion">
+       Why Bitcoin?
+     </div>
+     <div class="detail-accordion" id="second-accordion">
+      As a way to get discounts and deals, thousands of users are starting to use digital currences each single day to pay only or physical purchases. Virtual currencies such as Bitcoin and many others, represents a new way for businesses to reduce costs and timing in payments processing.
+    </div>
   </div>
+</div>
 </section>
+<div class="clearfix"></div>

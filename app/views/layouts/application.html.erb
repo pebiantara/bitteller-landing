@@ -40,6 +40,7 @@
         <div class="footer-of-header hidden-xs"></div>
       </section>
       <%= yield %>
+      <%= render "/shared/footer" %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
       <%= yield :javascripts %>
     </body>
