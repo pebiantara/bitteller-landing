@@ -1,10 +1,11 @@
 body{
-  font-family: Dosis, Arial, sans-serif;  
-  color: #717175;
-  font-size: 27px;
+  font-family: Dosis, Arial, sans-serif;  color: #777;
+  font-size: 16px;
   overflow-x: hidden;
 }
-
+i {margin: 0px 3px;}
+a{color: #727276;}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{color: #96be12 !important}
 
 header{margin-top: 10px;}
 .green{color: #96be12}
@@ -12,38 +13,50 @@ header{margin-top: 10px;}
 .btn-primary:hover, .btn-primary:visited, .btn-primary:focus, .btn-primary:active, .btn-primary.disabled{background: #727276;}
 .sign-in{padding-top: 5px;}
 
+.navbar-nav > li > a{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+div.logo.col-md-5.col-lg-5.col-xs-5.col-sm-5{margin-top: -5px;}
+
+.img-benefits{width: 200px;}
 .navbar-default{
   background: transparent;
   border: none;
 }
+.img-group{max-width: 750px;}
+.img-home{width: 200px;}
+.navbar-nav > li > a{
+  line-height: 24px;
+}
+
+.customers-text h4{font-weight: 500;}
+
+.info{font-size: 18px;}
+.info strong{font-weight: bold;}
+.logo{width: 270px;;}
 
 section.top-header{float: left; 
   opacity: 0.8; 
   width: 100%; 
   height: 100%; 
   float: left;
-/*  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom right,#FAFEFF,#96be12);
-    opacity: .3;
-  }*/
-
 }
-.mobile-mg{margin-top: 70px; z-index: 10;}
-h1{color: #96be12; font-weight: bolder; font-size: 60px;}
-h2{font-size: 50px;}
+.mobile-mg{margin-top: 20px; z-index: 10; width: 300px; height: 530px;}
+
+h1{color: #96be12; font-weight: 400; font-size: 60px;}
+h2{
+  font-size: 32px;
+  font-weight: 500;
+}
 h3{font-size: 40px;}
 h4{font-size: 30px;}
 div.dropdown-menu{min-width: 300px; padding: 20px;}
-.text-header-content{margin-top: 200px;}
+.text-header-content{margin-top: 100px;}
 .text-header-content h2{margin-top: 5px;}
 .text-header-content h1{margin-top: 2px;}
-.footer-of-header{background: #c5c5c4; opacity: 0.3; width: 100%; height: 100px; margin-top: -80px;}
+.footer-of-header{background: #c5c5c4; opacity: 0.3; width: 100%; height: 100px; margin-top: -60px;}
 /*.form-group .form-control*/
 .input{background: #c5c5c4;}
 
@@ -60,12 +73,14 @@ span.input-group-btn{z-index: -1}
 .btn-subscribe{
 	margin-left: -100px;
   border: 0;
-  width: 75px;
+  width: 100px;
   padding-left: 20px;
   background: #96be12;
   color: #fff; font-size: 20px;
   border-radius: 20px;
+  font-size: 20px;
 }
+.contact-us-btn{font-size: 24px; font-weight: 500;}
 .howitworks {margin-top: 50px;}
 .howitworks img{width: 200px; height: 250px; margin: auto;}
 .chevron{width: 50px; float: left; font-size: 50px; color: #96be12; margin-top: 100px; margin-left: 20px;}
@@ -77,9 +92,8 @@ span.input-group-btn{z-index: -1}
 .how-it-works-content{margin-top: 10px;}
 .increase{font-size: 25px;}
 .btn-pay img{width: 75%;}
-.customers-text{margin-top: 100px;}
-.box-checklist{margin-top: 50px;}
-.contact-us-btn{margin-top: 50px; margin-bottom: 75px !important;}
+.box-checklist{margin-top: 25px;}
+.contact-us-btn{margin-top: 25px; margin-bottom: 25px !important;}
 .stores h3:first{margin-top: 50px; margin-bottom: 50px !important;}
 .join{font-size: 30px;}
 .img-logo-text{width: 150px; margin-top: -10px; margin-right: 10px}
@@ -91,8 +105,8 @@ span.input-group-btn{z-index: -1}
 .market i{margin-left: 5px;}
 .btn-width{width: 200px; font-size: 25px;}
 section.questions{border-top: 5px solid #96be12;}
-.questions h3 {font-weight: bold; margin-top: 50px; font-size: 50px;}
-.title-accordion{width: 100%; background: #96be12; color: white; padding-left: 10px; margin-top: 20px; cursor: pointer;}
+.questions h3 {font-weight: 500; margin-top: 50px; font-size: 40px;}
+.title-accordion{width: 100%; background: #96be12; color: white; padding: 10px; margin-top: 20px; cursor: pointer;}
 .detail-accordion{background: #717175; color: white; padding: 10px; display: none;}
 .questions{margin-bottom: 50px;}
 .no-padding{padding: 0px !important;}
@@ -106,4 +120,5 @@ footer p{text-align: center; margin-top: 10px;}
 footer ul li a{color: #fff !important;}
 span.input-group-btn{cursor: pointer;}
 .form-control:focus{color:#96be12; background: #fff;}
+.info strong{font-size: 24px;}
 .sign-in{margin-left: 10px;}
