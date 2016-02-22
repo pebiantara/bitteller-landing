@@ -39,14 +39,15 @@ div.dropdown-menu{min-width: 300px; padding: 20px;}
 .radius{border-radius: 20px; -webkit-border-radius: 20px;}
 .grey{background: #c5c5c4;}
 .custom-group input{width: 70% !important; float: left; border-radius: 20px; background: #c5c5c4;}
+span.input-group-btn{z-index: -1}
 .btn-subscribe{
-	margin-left: -70px;
+	margin-left: -100px;
   border: 0;
-  z-index: -1;
-  padding-left: 40px;
+  width: 75px;
+  padding-left: 20px;
   background: #96be12;
   color: #fff; font-size: 20px;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 20px;
 }
 .howitworks {margin-top: 50px;}
 .howitworks img{width: 200px; height: 250px; margin: auto;}
@@ -86,5 +87,5 @@ footer ul li { position: relative; float: left; display: block; right: 50%; marg
 .copyright{color: #fff;}
 footer p{text-align: center; margin-top: 10px;}
 footer ul li a{color: #fff !important;}
-
+span.input-group-btn{cursor: pointer;}
 
