@@ -1,57 +1,73 @@
 @font-face {
-	font-family: 'nexa';
-	src: url('<%= asset_path("fonts/nevis.ttf") %>'); /* IE9 Compat Modes */
-	src: url('<%= asset_path("fonts/nexabold.otf") %>'),
-	  url('<%= asset_path("fonts/nexalight.otf") %>')
+font-family: 'nexa';
+src: url('<%= asset_path("fonts/nevis.ttf") %>'); /* IE9 Compat Modes */
+src: url('<%= asset_path("fonts/nexabold.otf") %>'),
+url('<%= asset_path("fonts/nexalight.otf") %>')
 }
 
 @font-face {
-	font-family: 'nexa-light';
-	src: url('<%= asset_path("fonts/nevis.ttf") %>'); /* IE9 Compat Modes */
-	src: url('<%= asset_path("fonts/nexalight.otf") %>')
+font-family: 'nexa-light';
+src: url('<%= asset_path("fonts/nevis.ttf") %>'); /* IE9 Compat Modes */
+src: url('<%= asset_path("fonts/nexalight.otf") %>')
 }
 
-section.top-header{
- background: url('<%= asset_path("bg.png") %>') repeat;
+.top-header{
+  background: #e4e3e2;
+  background-image: url('<%= asset_path("bg.png") %>') #e4e3e2,
+    -webkit-gradient(right, #fff, #e4e3e2),
+    -webkit-linear-gradient(left, #fff, #e4e3e2),
+    -o-linear-gradient(left, #fff, #e4e3e2),
+    linear-gradient(right, #fff, #e4e3e2)
 }
 
+
+<!-- .top-header{
+  background: #fff;
+  background-image: url('<%= asset_path("bg.png") %>'); /* fallback */
+  background-image: url('<%= asset_path("bg.png") %>'), linear-gradient(#fff, #e4e3e2); 
+} -->
+.mobile-mg{
+background: url('<%= asset_path("IPHONE.png") %>') no-repeat;
+background-size: 170%;
+background-position: -75px;
+}
 
 .title-1:before{
-	background: url('<%= asset_path("title-left.png") %>') no-repeat;
+background: url('<%= asset_path("title-left.png") %>') no-repeat;
 }
 
 .title-1:after{
-	background: url('<%= asset_path("title-right.png") %>') no-repeat;
+background: url('<%= asset_path("title-right.png") %>') no-repeat;
 }
 
 .arrow-up {
-	background: url('<%= asset_path("arrow-up.png") %>') no-repeat;
+background: url('<%= asset_path("arrow-up.png") %>') no-repeat;
 }
 
 .liberty{
-	background: url('<%= asset_path("liberty.png") %>') no-repeat;
+background: url('<%= asset_path("liberty.png") %>') no-repeat;
 }
 
 .greenwich{
-	background: url(' <%= asset_path("greenwich.png") %>') no-repeat;
+background: url(' <%= asset_path("greenwich.png") %>') no-repeat;
 }
 
 .pipe-top{
-	background: url(' <%= asset_path("pipe-top.png") %>') no-repeat;
+background: url(' <%= asset_path("pipe-top.png") %>') no-repeat;
 }
 
 .pipe-top-vertical{
-	background: url('<%= asset_path("pipe-top-vertical.png") %>') no-repeat;
+background: url('<%= asset_path("pipe-top-vertical.png") %>') no-repeat;
 }
 
 .pipe-bottom{
-	background: url('<%= asset_path("pipe-bottom.png") %>') no-repeat;
+background: url('<%= asset_path("pipe-bottom.png") %>') no-repeat;
 }
 
 .pipe-bottom-vertical{
-	background: url('<%= asset_path("pipe-bottom-vertical.png") %>') no-repeat;
+background: url('<%= asset_path("pipe-bottom-vertical.png") %>') no-repeat;
 }
 
 .cars{
-	background: url('<%= asset_path("car.png") %>') no-repeat;
+background: url('<%= asset_path("car.png") %>') no-repeat;
 }
