@@ -1,0 +1,24 @@
+.top-header{
+  background: #d3d2d3;
+  background-image: url('<%= asset_path("bg.png") %>');
+  background: -webkit-linear-gradient(left,#fff,#d3d2d3,#d3d2d3,#d3d2d3,#d3d2d3,#d3d2d3,#d3d2d3);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,#fff,#d3d2d3,#d3d2d3,#d3d2d3,#d3d2d3,#d3d2d3, #d3d2d3);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,#fff,#d3d2d3,#d3d2d3,#d3d2d3,#d3d2d3,#ffffff, #d3d2d3);
+  /* Standard syntax */
+  background: linear-gradient(to right,#fff,#d3d2d3,#d3d2d3,#d3d2d3,#d3d2d3,#ffffff, #d3d2d3);
+}
+
+
+
+
+
+.top-header{
+  background: #e4e3e2;
+  background-image: url('<%= asset_path("bg.png") %>') #e4e3e2,
+    -webkit-gradient(right, #fff, #e4e3e2),
+    -webkit-linear-gradient(left, #fff, #e4e3e2),
+    -o-linear-gradient(left, #fff, #e4e3e2),
+    linear-gradient(to right, #fff, #e4e3e2)
+}
